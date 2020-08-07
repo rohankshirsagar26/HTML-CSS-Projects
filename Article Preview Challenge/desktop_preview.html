@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Preview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            font-family: 'Manrope', sans-serif;
+            height: 100vh;
+        }
+        h3{
+            font-weight: 700;
+            display: inline-block;
+            width: 450px;
+            height: 85px;
+            margin-top: 20px;
+            margin-left: 35px;
+            margin-bottom: 0px;
+            line-height: 30px;
+            color: #4E5060;
+        }
+        p{
+            font-weight: 500;
+            display: inline-block;
+            width: 380px;
+            height: 60px;
+            font-size: 13px;
+            margin-left: 35px;
+            margin-top: 15px;
+            padding-right: 10px;
+            color: #80818A;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 100%;
+            width: 1440px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ECF1F8;
+            box-shadow: 0 0 20px rgb(199, 199, 199);
+        }
+        .box{
+            height: 29vh;
+            width: 74vh;
+            border-radius: 10px;
+            display: flex;
+        }
+        .left{
+            height: 100%;
+            width: 40%;
+        }
+        .left img{
+            height: 275px;
+            width: 275px;
+        }
+        .right{
+            height: 100%;
+            width: 70%;
+            background-color: #FFFFFF;
+        }
+        .right img{
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            margin-left: 35px;
+        }
+        .right h5{
+            display: inline-block;
+            height: 20px;
+            width: 150px;
+            position: absolute;
+            bottom: 395px;
+            left: 965px;
+            color: #4E535E;
+        }
+        .right #date{
+            display: inline-block;
+            position: absolute;
+            bottom: 335px;
+            left: 929px;
+            color: #A7ACB2;
+        }
+        .right .share{
+            height: 15px;
+            width: 15px;
+            padding: 7px;
+            background-color: #ECF1F8;
+            position: absolute;
+            bottom: 380px;
+            left: 1210px;
+        }
+        .right .navbar{
+            position: absolute;
+            height: 55px;
+            width: 250px;
+            border-radius: 10px;
+            background-color: #4B516A;
+            top: 470px;
+            left: 1130px;
+            display: none;
+        }
+        .navbar p{
+            color: #989FB9;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            letter-spacing: 7px;
+            position: absolute;
+            top: 18px;
+            left: 35px;
+        }
+        .navbar img{
+            height: 20px;
+            width: 20px;
+            color: white;
+            position: absolute;
+        }
+        #img1{
+            left: 90px;
+            top: 17px;
+        }
+        #img2{
+            left: 125px;
+            top: 17px;
+        }
+        #img3{
+            left: 160px;
+            top: 17px;
+        }
+        .share:hover + .navbar{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+                <div class="left"><img src="images/drawers.jpg" alt=""></div>
+                <div class="right">
+                    <h3>Shift the overall look and feel by <br>adding these wondeful touches to <br>furniture in your home</h3>
+                    <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninventing. I've got some simple tips to help you make any room feel complete.</p>
+                    <img src="images/avatar-michelle.jpg" alt="">
+                    <h5>Michelle Appleton</h5>
+                    <p id="date">28 Jun 2020</p>
+                    <img src="images/icon-share.svg" alt="" class="share">
+                    <div class="navbar">
+                        <p>SHARE</p>
+                        <img id="img1" src="images/icon-facebook.svg" alt="">
+                        <img id="img2" src="images/icon-twitter.svg" alt="">
+                        <img id="img3" src="images/icon-pinterest.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+</body>
+</html>

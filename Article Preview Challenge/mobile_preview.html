@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Preview</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            font-family: 'Manrope', sans-serif;
+            background-color: black;
+        }
+        h3{
+            font-weight: 700;
+            display: inline-block;
+            color: #4E5060;
+            margin-left: 30px;
+            margin-right: 25px;
+            margin-top: 30px;
+            font-size: 1.05em;
+            line-height: 1.5em;
+            background-color: white;
+        }
+        p{
+            background-color: white;
+            margin-left: 30px;
+            margin-right: 25px;
+            margin-top: 15px;
+            font-size: 0.8em;
+            line-height: 1.8em;
+            color: #80818A;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            width: 395px;
+            height: 685px;
+            background-color: #ECF1F8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: #ffffff;
+            height: 80%;
+            width: 85%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .top{
+            height: 35%;
+        }
+        .top img{
+            height: 230px;
+            width: 400px;
+        }
+        .mid{
+            height: 50%;
+            background-color: white;
+        }
+        .bottom{
+            height: 15%;
+            background-color: white;
+        }
+        .bottom .photo{
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            position: absolute;
+            top: 670px;
+            left: 820px;
+        }
+        .bottom .share{
+            background-color: #ECF1F8;
+            padding: 7px;
+            border-radius: 15px;
+            position: absolute;
+            top: 688px;
+            left: 1070px;
+        }
+        h5{
+            background-color: white;
+            position: absolute;
+            color: #4E535E;
+            display: inline-block;
+            height: 20px;
+            width: 150px;
+            top: 675px;
+            left: 885px;
+        }
+        #date{
+            background-color: white;
+            position: absolute;
+            color: #A7ACB2;
+            top: 677px;
+            left: 855px;
+        }
+        .hover{
+            display: none;
+            background-color: #4B516A;
+            height: 100%;
+            width: 100%;
+        }
+        .hover p{
+            color: #989FB9;
+            display: inline;
+            letter-spacing: 7px;
+            position: absolute;
+            background-color: #4B516A;
+            top: 680px;
+            left: 800px;
+        }
+        #img1{
+            color: white;
+            position: absolute;
+            background-color: #4B516A;
+            top: 695px;
+            left: 930px;
+        }
+        #img2{
+            color: white;
+            position: absolute;
+            background-color: #4B516A;
+            top: 698px;
+            left: 970px;
+        }
+        #img3{
+            color: white;
+            position: absolute;
+            background-color: #4B516A;
+            top: 696px;
+            left: 1010px;
+        }
+        #img4{
+            background-color: white;
+            padding: 5px;
+            border-radius: 15px;
+            position: absolute;
+            top: 695px;
+            left: 1070px;
+        }
+        .share:hover + .hover{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="top"><img src="images/drawers.jpg" alt=""></div>
+            <div class="mid">
+                <h3>Shift the overall look and feel by <br>adding these wondeful touches <br>to furniture in your home</h3>
+                    <p>Ever been in a room and felt like <br>something was missing? Perhaps it felt <br>slightly bare and uninventing. I've got some <br>simple tips to help you make any room feel <br>complete.</p>
+            </div>
+            <div class="bottom">
+                <img class="photo" src="images/avatar-michelle.jpg" alt="">
+                <h5>Michelle Appleton</h5>
+                <p id="date">28 Jun 2020</p>
+                <img src="images/icon-share.svg" alt="" class="share">
+                <div class="hover">
+                    <p>SHARE</p>
+                    <img src="images/icon-facebook.svg" alt="" id="img1">
+                    <img src="images/icon-twitter.svg" alt="" id="img2">
+                    <img src="images/icon-pinterest.svg" alt="" id="img3">
+                    <img src="images/icon-share.svg" alt="" id="img4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        .conatainer{
+            height: 100vh;
+            width: 100vw;
+        }
+        .sky{
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 0;
+            background-color: skyblue;
+        }
+        .sky img{
+            position: absolute;
+        }
+        #bird{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation-name: bird;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        #bird1{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation-name: bird;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+        #sun{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 40px;
+            left: 400px;
+            animation-name: sun;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+        }
+        #cloud1{
+            height: 50px;
+            width: 70px;
+            top: 100px;
+            left: 00px;
+            animation-name: cloud1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+        #cloud2{
+            height: 150px;
+            width: 190px;
+            top: 20px;
+            left: 000px;
+            animation-name: cloud2;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+        }
+        #cloud3{
+            height: 100px;
+            width: 130px;
+            top: 60px;
+            left: 00px;
+            animation-name: cloud3;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;   
+        }
+        #cloud4{
+            height: 80px;
+            width: 100px;
+            top: 40px;
+            left: 000px;
+            animation-name: cloud4;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        #cloud5{
+            top: 0px;
+            left: 00px;
+            animation-name: cloud5;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        .tree{
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            top: 50%;
+            background-color: green;
+        }
+        .tree h1{
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 60px;
+            animation-name: h1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+        .tree img{
+            height: 100px;
+            width: 100px;
+            animation: heart;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #img1{
+            top: 30px;
+            left: 300px;
+            position: absolute;
+        }
+        #img2{
+            top: 30px;
+            right: 300px;
+            position: absolute;
+        }
+        .road{
+            width: 100%;
+            height: 30%;
+            background-color: gray;
+            position: absolute;
+            bottom: 0;
+        }
+        .road p{
+            height: 0%;
+            width: 10000000000px;
+            border: 10px dashed white;
+            margin-top: 130px;
+            animation-name: road;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        .road img{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        #img3{
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            animation-name: bikeright;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        #img3-1{
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            animation-name: bikeright;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+        }
+        #img4{
+            position: absolute;
+            top: 160px;
+            right: 0px;
+            animation-name: bikeleft;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+        #img4-1{
+            position: absolute;
+            top: 160px;
+            right: 0px;
+            animation-name: bikeleft;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+        @keyframes road{
+            from{transform: translateX(-1000px);}
+            to{transform: translateX(00px);}
+        }
+        @keyframes h1{
+            from{transform: translateX(-150px);}
+            to{transform: translateX(150px);}
+        }
+        @keyframes heart{
+            from{transform: scale(0.5);}
+            to{transform: scale(1.5);}
+        }
+        @keyframes bikeright{
+            from{transform: translateX(0px);}
+            to{transform: translateX(2000px);}
+        }
+        @keyframes bikeleft{
+            from{transform: translateX(0px);}
+            to{transform: translateX(-2000px);}
+        }
+        @keyframes cloud1{
+            from{transform: translateX(0px);}
+            to{transform: translateX(1800px);}
+        }
+        @keyframes cloud2{
+            from{transform: translateX(0px);}
+            to{transform: translateX(1800px);}
+        }
+        @keyframes cloud3{
+            from{transform: translateX(0px);}
+            to{transform: translateX(1800px);}
+        }
+        @keyframes cloud4{
+            from{transform: translateX(0px);}
+            to{transform: translateX(1800px);}
+        }
+        @keyframes cloud5{
+            from{transform: translateX(0px);}
+            to{transform: translateX(1800px);}
+        }
+        @keyframes sun{
+            from{transform: rotate(-360deg);}
+            to{transform: rotate(360deg);}
+        }
+        @keyframes bird{
+            from{transform: translate(0.0)}
+            to{transform: translate(1800px,-350px);}
+        }
+        @keyframes bird1{
+            from{transform: translate(0px,0px)}
+            to{transform: translate(1800px,-350px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sky">
+            <img id="bird" src="bird.png" alt="">
+            <img id="bird1" src="bird1.png" alt="">
+            <img id="sun" src="sun.png" alt="">
+            <img id="cloud1" src="cloud.png" alt="">
+            <img id="cloud2" src="cloud.png" alt="">
+            <img id="cloud3" src="cloud.png" alt="">
+            <img id="cloud4" src="cloud.png" alt="">
+            <img id="cloud5" src="cloud.png" alt="">
+        </div>
+        <div class="tree">
+            <img id="img1" src="heart.svg" alt="">
+            <h1>Roam Around ! Feel Better !!</h1>
+            <img id="img2" src="heart.svg" alt="">
+        </div>
+        <div class="road">
+            <img id="img3" src="delivery-man.png" alt="">
+            <img id="img3-1" src="delivery-man.png" alt="">
+            <p></p>
+            <img id="img4" src="delivery-man-left.png" alt="">
+            <img id="img4-1" src="delivery-man-left.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

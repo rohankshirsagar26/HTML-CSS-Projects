@@ -107,7 +107,20 @@
             background-color: #4B516A;
             top: 470px;
             left: 1130px;
-            display: none;
+            /* display: none; */
+        }
+        .navbar::before{
+            z-index: 10000000;
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 25px;
+            background-color: tomato;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            margin: auto;
+            transform: rotate(45deg);
         }
         .navbar p{
             color: #989FB9;
